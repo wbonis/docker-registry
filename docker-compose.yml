@@ -24,6 +24,8 @@ backend:
     CACHE_LRU_REDIS_PORT: 6379
 frontend: 
   image: konradkleine/docker-registry-frontend 
+  links:
+    - backend
   ports: 
     - 127.0.0.1:5080:80 
   environment: 
