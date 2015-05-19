@@ -1,6 +1,0 @@
-htpasswd
-certs/*
-.idea/*
-readme.md
-.gitignore
-config.env
