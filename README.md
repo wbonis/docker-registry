@@ -21,7 +21,7 @@ To Start:
 docker-compose up
 ```
 
-Then you can reach the UI at: https://ip.of.dockerhost:5000/ui (The Username is admin:admin)
+Then you can reach the UI at: https://ip.of.dockerhost:5000/ui/ (The Username is admin:admin)
 
 you can upload a image to your server with:
 
