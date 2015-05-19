@@ -39,6 +39,6 @@ expose:
   ports:
     - 5000:443
   environment:
-    - PROXY_HOSTNAME=***REMOVED***
+    - PROXY_HOSTNAME=reg.your.domain
   volumes:
     - certs/:/srv/certs
