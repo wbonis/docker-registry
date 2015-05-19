@@ -1,4 +1,14 @@
-# Apache+ AD + Docker Registry
+# Apache & Docker Registry
+
+##
+
+This image is also here: https://registry.hub.docker.com/u/zimboboyd/registry-proxy-apache/
+
+you can pull it with:
+```bash
+docker pull zimboboyd/registry-proxy-apache
+````
+
 
 Need that to authenticate to a docker registry over https
 
