@@ -56,6 +56,7 @@ docker run -d \
 
 _Note:_ The registry must be named "backend" inside the container so apache forwards to 
 the correct location.
+
 _Note:_ The ui must be named "frontend" inside the container so apache forwards to 
 the correct location.
 
