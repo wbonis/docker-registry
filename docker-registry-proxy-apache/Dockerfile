@@ -7,17 +7,10 @@ RUN    yum --setopt=tsflags=nodocs -y update \
 	&& yum clean all
 
 # The domain this host should run under (should match SSL cert)
-ENV REGISTRY_HOSTNAME "my.registry.com"
+ENV REGISTRY_HOSTNAME "reg.your.domain"
 
 # Verbosity of logging (see apache LogLevel directive)
 ENV PROXY_LOG_LEVEL warn
-
-# LDAP connection details
-ENV PROXY_LDAP_ADDR "ldap://127.0.0.1"
-ENV PROXY_LDAP_CONNTYPE NONE
-
-# LDAP Group Auth
-ENV PROXY_LDAP_GROUP "cn=registry"
 
 # Add the config
 ADD registry-proxy.conf /etc/httpd/conf.d/registry-proxy.conf
