@@ -9,6 +9,8 @@ First turn up a registry (or however you do it):
 # NOTE: We DO NOT expose the port 5000 mapping -- this container does not allow for direct
 #       host access. The only way to this registry is through the proxies private link.
 docker run -d --name backend registry
+
+# Second, run a Frontend
 docker run -d --name frontend \
    --link backend:backend
    -e ENV_DOCKER_REGISTRY_HOST=backend \
