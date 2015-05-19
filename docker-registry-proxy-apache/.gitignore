@@ -1,0 +1,4 @@
+htpasswd
+certs/*
+.idea/*
+config.env
